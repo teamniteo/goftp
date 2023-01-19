@@ -186,10 +186,6 @@ func newClient(config Config, hosts []string) *Client {
 		config.User = "anonymous"
 	}
 
-	if config.Password == "" {
-		config.Password = "anonymous"
-	}
-
 	if config.ServerLocation == nil {
 		config.ServerLocation = time.UTC
 	}
